@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 
 //Configurações de onde o servidor vai se localizar
-const hostname = 'localhost';
+const hostname = '192.168.1.9';
 const PORT = process.env.PORT || 3000;
 
 //Deixando estático
