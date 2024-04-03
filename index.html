@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo clicker</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+    <!--Moeda e contador-->
+    <div id="coin"></div>
+    <div id="coin-counter">0 Coins</div>
+    <div id="power-counter">1 power click</div>
+
+    <!--Nav-->
+    <nav id="nav">
+        <div id="btn-home" class="item">Home</div>
+        <div id="btn-upgrades" class="item">Upgrades</div>
+    </nav>
+
+    <!--Janela de upgrades-->
+    <div id="upgrades">
+        <h2>Upgrades</h2>
+
+        <!--Lista de itens que podem ter upgrades-->
+        <ul>
+            <li class="item">
+                <span class="title">Caixa de mendigo</span><br>
+                <span class="description">Peça mais dinheiro! +1 power click</span>
+                <button id="caixa" class="compra">$100</button>
+            </li>
+            <li class="item">
+                <span class="title">Pano</span><br>
+                <span class="description">Lave carros! +5 power click</span>
+                <button id="pano" class="compra">$200</button>
+            </li>
+            <li class="item">
+                <span class="title">Emprego</span><br>
+                <span class="description">Agora você trabalha! +10 power click</span>
+                <button id="emprego" class="compra">$1000</button>
+            </li>
+        </ul>
+    </div>
+
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
