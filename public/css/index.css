@@ -1,6 +1,8 @@
 /*Configuração inicial*/
 * {
     box-sizing: border-box;
+    cursor: default;
+    user-select: none;
 }
 
 body {
@@ -31,6 +33,22 @@ body {
     text-align: center;
     font-size: 15px;
     color: #494949;
+}
+
+#msg {
+    display: none;
+    z-index: 5;
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #FFF;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 90%;
+    text-align: center;
+    overflow: hidden;
 }
 
 /*Componente nav*/

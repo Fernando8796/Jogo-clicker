@@ -1,5 +1,5 @@
 //Os coins e o poder de ganhar mais dinheiro
-let coin = 0;
+let coin = 1300;
 let power = 1;
 updateDisplay();
 
@@ -28,7 +28,7 @@ class Upgrade {
         if (coin >= this.preco) {
             coin -= this.preco;
             power += this.power;
-            alert(`Parabéns, você comprou '${this.nome}'!`);
+            mensagem(`Parabéns, você comprou '${this.nome}'!`);
             updateDisplay();
             
             //Não deixar o usuário comprar o upgrade novamente
@@ -61,4 +61,11 @@ $("#btn-upgrades").click(() => $("#upgrades").show());
 function updateDisplay(){
     $("#coin-counter").text(`${coin} Coins`);
     $("#power-counter").text(`${power} power click`);
+}
+
+//Função para mostrar uma mensagem na tela
+function mensagem(texto) {
+    $("#msg").text(texto);
+    $("#msg").slideDown(300);
+    setTimeout(() => $("#msg").slideUp(300), 2000);
 }
